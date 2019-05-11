@@ -1,0 +1,5 @@
+[[headers]]
+  for = "/wiki/*"
+
+  [headers.values]
+    Content-Type = "text/html; charset=utf8"
