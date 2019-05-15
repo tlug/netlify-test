@@ -1,5 +1,22 @@
 [[headers]]
-  for = "/wiki/*"
+    for = "/wiki/*"
+    [headers.values]
+        Content-Type = "text/html; charset=utf8"
 
-  [headers.values]
-    Content-Type = "text/html; charset=utf8"
+####################################################################
+#   See content-type/README for details on these
+
+[[headers]]
+    for = "/content-type/lower/*"
+    [headers.values]
+        content-type = "text/html; charset=utf8"
+
+[[headers]]
+    for = "/content-type/mixed/*"
+    [headers.values]
+        Content-type = "text/html; charset=utf8"
+
+[[headers]]
+    for = "/content-type/upper/*"
+    [headers.values]
+        Content-Type = "text/html; charset=utf8"
