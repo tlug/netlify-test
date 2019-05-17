@@ -23,6 +23,11 @@
 
 ####################################################################
 #   protected/
+#
+#   Though the deploy summary says "All header rules deployed without
+#   errors," authentication isn't requested or required. Seems it only
+#   works on paid accounts, as documented here:
+#     https://www.netlify.com/blog/2017/04/07/selective-password-protection/
 
 [[headers]]
     for = "/protected/*"
