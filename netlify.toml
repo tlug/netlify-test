@@ -20,3 +20,11 @@
     for = "/content-type/upper/*"
     [headers.values]
         Content-Type = "text/html; charset=utf8"
+
+####################################################################
+#   protected/
+
+[[headers]]
+    for = "/protected/*"
+    [headers.values]
+        Basic-Auth = "user1:one user2:two"
